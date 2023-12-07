@@ -1,0 +1,7 @@
+- hosts: all
+  become: true
+  pre_tasks:
+  - name: Update_cache of servers
+    apt:
+      upgrade=yes
+      update_cache=yes

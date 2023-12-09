@@ -1,0 +1,7 @@
+- name: Installing mysql-server
+  apt:
+    name: mysql-server
+    state: latest
+
+- name: mysql_secure_installation
+

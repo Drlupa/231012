@@ -5,3 +5,9 @@
     apt:
       upgrade=yes
       update_cache=yes
+
+
+- hosts: web_server
+  become: true
+  roles:
+    - web_server
